@@ -115,6 +115,12 @@ html {
 #desktop-navbar a:hover::before {
 	transform: scaleX(1);
 }
+.logo-text {
+	transition: 120ms ease-in-out;
+}
+.logo-text:hover {
+	color: #636363 !important;
+}
 
 /* M O B I L E   N A V  */
 .navbar {
@@ -124,12 +130,17 @@ html {
 	z-index: 2;
 	display: flex;
 	display: none;
+	text-align: center;
 }
 .navbar p {
 	font-family: "Playfair Display", serif;
+	font-size: 1.2em;
 	margin-left: 20px;
-	height: 100%;
-	align-self: center;
+	padding: 2px;
+}
+.navbar a {
+	text-decoration: none;
+	color: initial;
 }
 /* I C O A N A   HAMBURGER */
 
